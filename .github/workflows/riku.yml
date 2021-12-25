@@ -34,7 +34,10 @@ jobs:
         run: git clone https://github.com/flyingcakes85/riku-anime-boys-template /tmp/riku-anime-boys-template
 
       - name: Build
-        run: ./riku .riku.toml
+        run: |
+          ls
+          tree .
+          ./riku .riku.toml
 
       - name: Push to remote
         run: |
